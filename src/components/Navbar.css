@@ -1,20 +1,16 @@
-nav {
-    width: 100%;
-    height: 60px;
-    
-    display: flex;
-    border: solid 2px;
-  
-  }
-img {
-    width: 12;
-    height: 12;
- 
-  }
-  
-  nav > div {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+*{
+  magin: 0;
+  padding: 0;
+  box-siZing: border-box;
+  font-size : 50px;
+}
+
+nav{
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  height: 150px;
+  background-color: white;
+  color: black;
+
+}

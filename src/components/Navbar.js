@@ -5,10 +5,12 @@ import "../Components/Navbar.css";
 function Navbar() {
     return (
         <div>
-            <img src= "/img/img.png" alt="profile"/>
             <nav>
-                <NavLink to = "/category">운동, 게임, 요리</NavLink>
-                <NavLink to = "/login">Login</NavLink>
+                <img src= "/img/img.png" alt="profile"/>
+                <NavLink to = "/category">
+                    <button>운동, 게임, 요리</button></NavLink>
+                <NavLink to = "/login">
+                    <button>Login</button></NavLink>
             </nav>
         </div>
     );
