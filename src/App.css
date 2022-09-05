@@ -1,8 +1,15 @@
 * {
   box-sizing: border-box;
+
 }
 
 app {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  height: 50px;
+  background-color: white;
+  color: black;
 
   
 }
