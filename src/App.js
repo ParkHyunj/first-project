@@ -1,10 +1,10 @@
 import React from 'react';
 import { Routes, Route } from "react-router-dom";
-import Home from './Components/Home';
-import Exercise from './Pages/Exercise';
-import Cook from './Pages/Cook';
-import Game from './Pages/Game';
-import Login from './Pages/Login';
+import Home from './pages/Home';
+import Exercise from './components/Exercise';
+import Cook from './components/Cook';
+import Game from './components/Game';
+import Login from './components/Login';
 import './App.css';
 
 function App() {
