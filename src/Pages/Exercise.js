@@ -1,15 +1,18 @@
 import React from "react";
+import { Routes, Route, Link } from "react-router-dom";
 import PostMain from '../pages/PostMain';
-import { Link } from "react-router-dom";
+import PostView from '../components/post/PostView';
 
 function Exercise() {
     return (
         <div className="Exercise"> 
-            운동 게시판
-            <Link to = "/writing">
+            <Link to = "/exercise/writing">
                 <button>글쓰기</button>
             </Link>
-            <PostMain />
+            <Routes>
+                <Route path='/postView/:no' element={<PostView/>} />
+                <Route path='/' element={<PostMain />} />
+            </Routes>
         </div>
     );
 }
