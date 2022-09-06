@@ -1,52 +1,45 @@
 import React from 'react';
+import Table from '../table/Table';
+import TableColumn from '../table/TableColumn';
+import TableRow from '../table/TableRow';
 
 function PostList(props) {
   return (
     <div>
-      <table>
-        <thead>
-          <tr>
-            <th>글번호</th>
-            <th>제목</th>
-            <th>등록일</th>
-            <th>조회수</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>1</td>
-            <td>첫번째 게시글입니다.</td>
-            <td>2020-10-25</td>
-            <td>6</td>
-          </tr>
-          <tr>
-            <td>2</td>
-            <td>두번째 게시글입니다.</td>
-            <td>2020-10-25</td>
-            <td>5</td>
-          </tr>
-          <tr>
-            <td>3</td>
-            <td>세번째 게시글입니다.</td>
-            <td>2020-10-25</td>
-            <td>1</td>
-          </tr>
-          <tr>
-            <td>4</td>
-            <td>네번째 게시글입니다.</td>
-            <td>2020-10-25</td>
-            <td>2</td>
-          </tr>
-          <tr>
-            <td>5</td>
-            <td>다섯번째 게시글입니다.</td>
-            <td>2020-10-25</td>
-            <td>4</td>
-          </tr>
-        </tbody>
-      </table>
+      <Table headersName={['글번호', '제목', '등록일', '조회수']}>
+        <TableRow>
+         <TableColumn>1</TableColumn>
+         <TableColumn>첫번째 게시글입니다.</TableColumn>
+         <TableColumn>2020-10-25</TableColumn>
+         <TableColumn>6</TableColumn>
+        </TableRow>
+        <TableRow>
+         <TableColumn>2</TableColumn>
+         <TableColumn>두번째 게시글입니다.</TableColumn>
+         <TableColumn>2020-10-25</TableColumn>
+         <TableColumn>5</TableColumn>
+        </TableRow>
+        <TableRow>
+         <TableColumn>3</TableColumn>
+         <TableColumn>세번째 게시글입니다.</TableColumn>
+         <TableColumn>2020-10-25</TableColumn>
+         <TableColumn>1</TableColumn>
+        </TableRow>
+        <TableRow>
+         <TableColumn>4</TableColumn>
+         <TableColumn>네번째 게시글입니다.</TableColumn>
+         <TableColumn>2020-10-25</TableColumn>
+         <TableColumn>2</TableColumn>
+        </TableRow>
+        <TableRow>
+         <TableColumn>5</TableColumn>
+         <TableColumn>다섯번째 게시글입니다.</TableColumn>
+         <TableColumn>2020-10-25</TableColumn>
+         <TableColumn>4</TableColumn>
+        </TableRow>
+      </Table>
     </div>
-  )
+  );
 }
 
 export default PostList;

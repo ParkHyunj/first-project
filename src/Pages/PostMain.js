@@ -6,7 +6,7 @@ const PostMain = props => {
     <>
       <PostList />
     </>
-  )
+  );
 }
 
 export default PostMain;
