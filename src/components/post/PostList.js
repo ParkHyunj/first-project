@@ -3,6 +3,7 @@ import Table from '../table/Table';
 import TableColumn from '../table/TableColumn';
 import TableRow from '../table/TableRow';
 import data from './data.json';
+import { Link } from 'react-router-dom';
 
 function PostList() {
   const [dataList, setDataList ] = useState([]);
@@ -19,7 +20,9 @@ function PostList() {
             return (
               <TableRow key={index}>
                 <TableColumn>{ item.no }</TableColumn>
-                <TableColumn>{ item.title }</TableColumn>
+                <TableColumn>
+                <Link to={`/postView/${item.no}`}>{ item.title }</Link>
+                  </TableColumn>
                 <TableColumn>{ item.createDate }</TableColumn>
                 <TableColumn>{ item.readCount }</TableColumn>
               </TableRow>
