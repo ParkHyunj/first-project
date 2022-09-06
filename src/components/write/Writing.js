@@ -1,16 +1,17 @@
 import React from "react";
+import "./Writing.css";
 
 function Writing() {
     return (
-        <div>
-           <h1>제목</h1> 
-                <input type='text'/>
-           <h2>작성자</h2>
-                <input type='text'/>
-           <h3>날짜</h3>
-                <input type='text'/>
-           <h4>내용</h4>
-                <textarea></textarea>
+        <div className='Writing'>
+            <input 
+                type='text' id='title_txt' placeholder='제목'/>
+            <input 
+                type='text' id='title_txt' placeholder='작성자'/>
+            <input 
+                type='text' id='title_txt' placeholder='날짜'/>
+            <input 
+                type='text' id='content_txt' placeholder='내용을 입력하세요.'/>     
             <p>
                 <button>등록</button>
                 <button>취소</button>
