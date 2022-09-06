@@ -1,11 +1,12 @@
 import React from 'react';
 import { Routes, Route } from "react-router-dom";
 import Home from './pages/Home';
-import Exercise from './components/Exercise';
-import Cook from './components/Cook';
-import Game from './components/Game';
-import Login from './components/Login';
+import Exercise from './pages/Exercise';
+import Cook from './pages/Cook';
+import Game from './pages/Game';
+import Login from './pages/Login';
 import './App.css';
+import Writing from './components/write/Writing';
 
 function App() {
     return (
@@ -15,7 +16,8 @@ function App() {
                 <Route path="/exercise" element= { <Exercise />} />
                 <Route path="/cook" element={ <Cook />} />
                 <Route path="/game" element={ <Game />} />
-                <Route path="/login" element={ <Login />} />           
+                <Route path="/login" element={ <Login />} />
+                <Route path="/writing" element={ <Writing/> } />           
             </Routes>  
         </div>      
     );
