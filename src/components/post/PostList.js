@@ -21,7 +21,7 @@ function PostList() {
               <TableRow key={index}>
                 <TableColumn>{ item.no }</TableColumn>
                 <TableColumn>
-                <Link to={`/postView/${item.no}`}>{ item.title }</Link>
+                <Link to={`/exercise/postView/${item.no}`}>{ item.title }</Link>
                   </TableColumn>
                 <TableColumn>{ item.createDate }</TableColumn>
                 <TableColumn>{ item.readCount }</TableColumn>
