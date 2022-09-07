@@ -1,11 +1,18 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import PostMain from '../pages/PostMain';
 
 function Game() {
     return (
-        <div> 
-            <h1>게임</h1>
+        <div className="Exercise"> 
+            <Link to = "/game/writing">
+                <button>글쓰기</button>
+            </Link>
+            <PostMain />
         </div>
     );
 }
 
 export default Game;
+
+
