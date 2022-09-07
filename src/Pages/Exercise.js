@@ -10,7 +10,7 @@ function Exercise() {
                 <button>글쓰기</button>
             </Link>
             <Routes>
-                <Route path='/postView/:no' element={<PostView/>} />
+                <Route path='/exercise/postView/:no' element={<PostView/>} />
                 <Route path='/' element={<PostMain />} />
             </Routes>
         </div>
