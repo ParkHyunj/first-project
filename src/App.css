@@ -1,18 +1,14 @@
 * {
-  box-sizing: border-box;
-
-}
-
-app {
-  display: flex;
-  justify-content: space-around;
-  align-content: center;
-  height: 50px;
+  box-siZing: border-box;
+  font-size : 50px;
   background-color: white;
-  color: black;
-
-  
+  margin: 10px;
+  font-family: Arial;
+  text-align: center;
 }
 
+img {
+  height: 30%;
+  width: 30%;
+}
 
- 

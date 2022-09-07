@@ -1,10 +1,9 @@
 import React from "react";
 import { Link } from 'react-router-dom';
-import "../pages/Home.css";
 
 function Home() {
     return (
-        <div>
+        <div className= "Home">
             <img src= "/img/img.png" alt="profile"/>
             <Link to="/exercise">운동</Link>
             <Link to="/cook">요리</Link>
