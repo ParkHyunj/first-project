@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from 'react-router-dom';
 
+
 function Home() {
     return (
         <div className= "Home">
@@ -15,7 +16,7 @@ function Home() {
                 게임
             </Link>
             <Link to="/login" style={{ textDecoration: "none", color: "black"}}>
-                Login
+                <button>Login</button>
             </Link>
         </div>
     );
