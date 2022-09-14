@@ -1,15 +1,23 @@
 import React, { useEffect, useState } from 'react';
 import PostNo from './data.json';
 import './Post.css';
-import { useParams } from "react-router-dom";
 
 function PostView() {
   
   const [ data, setData ] = useState({});
+  const [ postNum, setpostNum ] = useState(0);
 
   useEffect(() => {
-    setData(PostNo.datas);
+    var pathName = window.location.pathname;
+    setpostNum(pathName.substr(-1));
+    setData(PostNo.datas[postNum-1]);
   }, [ ]);
+
+  useEffect(() => {
+    if (postNum !==0)(
+      setData(PostNo.datas[postNum-1])
+    )
+  }, [postNum]);
 
   return (
     <div>
