@@ -21,8 +21,11 @@ function PostList() {
               <TableRow key={index}>
                 <TableColumn>{ item.no }</TableColumn>
                 <TableColumn>
-                <Link to={`/exercise/postView/${item.no}`}>{ item.title }</Link>
-                  </TableColumn>
+                  <Link to={`/exercise/postView/${item.no}`}
+                   style={{ textDecoration: "none", color: "black"}}>
+                      { item.title }
+                  </Link>
+                </TableColumn>
                 <TableColumn>{ item.createDate }</TableColumn>
                 <TableColumn>{ item.readCount }</TableColumn>
               </TableRow>
