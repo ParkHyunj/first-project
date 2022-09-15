@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import PostMain from '../pages/PostMain';
+import PostMain from '../components/post/PostMain';
 
 function Cook() {
     return (
