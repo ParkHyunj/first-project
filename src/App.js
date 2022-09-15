@@ -1,6 +1,6 @@
 import React from 'react';
 import { Routes, Route } from "react-router-dom";
-import Home from './pages/Home';
+import Header from './pages/Header';
 import Exercise from './pages/Exercise';
 import Cook from './pages/Cook';
 import Game from './pages/Game';
@@ -12,7 +12,7 @@ function App() {
     return (
         <div>
             <Routes>
-                <Route path="/" element={ <Home />} />
+                <Route path="/" element={ <Header />} />
                 <Route path="/exercise" element= { <Exercise />} />
                 <Route path="/cook" element={ <Cook />} />
                 <Route path="/game" element={ <Game />} />
