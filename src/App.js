@@ -5,7 +5,6 @@ import Exercise from './pages/Exercise';
 import Cook from './pages/Cook';
 import Game from './pages/Game';
 import Login from './pages/Login';
-import './App.css';
 import Writing from './components/write/Writing';
 import PostView from './components/post/PostView';
 
