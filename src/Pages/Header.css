@@ -1,0 +1,38 @@
+.container {
+    background-color: mintcream;
+    display:flex;
+    flex-direction: row;
+    height: 300px;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+}
+img{
+    width: 25%;
+    height:100%;
+}
+
+.item {
+    font-size: 70px;
+}
+
+.item:nth-child(1){
+    flex-grow:3;
+}
+.item:nth-child(2){
+    flex-grow:2;
+}
+
+.item:nth-child(3){
+    flex-grow:2;
+}
+
+.item:nth-child(4){
+    flex-grow:2;   
+}
+
+.item:nth-child(5){
+    flex-grow:1;
+}
+
+

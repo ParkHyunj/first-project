@@ -1,0 +1,17 @@
+.Exercise {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+/* .item{
+
+}
+.item.item:nth-child(1){
+ 
+}
+.item.item:nth-child(2){
+
+}
+.item.item:nth-child(3){
+
+} */

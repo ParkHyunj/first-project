@@ -1,43 +1,33 @@
 import React from 'react';
-import { Navbar, Nav, Button, Container } from 'react-bootstrap';
+import { Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import "../pages/Header.css";
 
 function Header(){
     return(
-        <header>
-          <Navbar bg="light" expand="lg">
-             <Container>
-              <Navbar.Brand>
-                  <img src= "/img/img.png" alt="profile"/>
-              </Navbar.Brand>
-              <Navbar.Toggle aria-controls="basic-navbar-nav" />
-              <Navbar.Collapse id="basic-navbar-nav">
-                  <Nav className="ml-auto">
-                      <Nav>
-                        <Link to="/exercise" style={{ textDecoration: "none"}}>
-                            운동
-                        </Link>
-                      </Nav>
-                      <Nav>
-                        <Link to="/cook" style={{ textDecoration: "none"}}>
-                            요리
-                        </Link>
-                      </Nav>
-                      <Nav>
-                        <Link to="/game" style={{ textDecoration: "none"}}>
-                            게임
-                        </Link>
-                      </Nav>
-                      <Nav>
-                        <Link to="/login" style={{ textDecoration: "none"}}>
-                            <Button variant="primary">Login</Button>
-                        </Link>   
-                      </Nav>     
-                  </Nav>
-              </Navbar.Collapse>
-             </Container>
-          </Navbar>
-        </header>
+        <div className="container">
+            <img src= "/img/img.png" alt="profile"/>
+          <div className="item">
+            <Link to="/exercise" style={{ textDecoration: "none"}}>
+                운동
+            </Link>
+          </div>
+          <div className="item">
+            <Link to="/cook" style={{ textDecoration: "none"}}>
+                요리
+            </Link>
+          </div>
+          <div className="item">
+            <Link to="/game" style={{ textDecoration: "none"}}>
+                게임
+            </Link>
+          </div>
+          <div className="item">
+            <Link to="/login" style={{ textDecoration: "none"}}>
+                <Button variant="primary">Login</Button>
+           </Link>
+          </div>  
+        </div>
     );
 }
 
