@@ -4,19 +4,28 @@ import TableColumn from '../table/TableColumn';
 import TableRow from '../table/TableRow';
 import data from './data.json';
 import { Link } from 'react-router-dom';
+import Paging from '../post/Paging';
 
 function PostList() {
-  const [dataList, setDataList ] = useState([]);
   
+  const [ posts, setPosts ] = useState([]);
+  const [ currentPosts, setCurrentPosts ] = useState([]);
+  const [ page, setPage ] = useState([1]);
+  const handlePageChange = (page) => {setPage(page)};
+  const [ postPerPage ] = useState([6]);
+  const indexOfLastPost = page * postPerPage;
+  const indexOfFirstPost = indexOfLastPost - postPerPage;
+
   useEffect(() => {
-    setDataList(data.datas);
-  }, []);
+    setPosts(data.datas);
+    setCurrentPosts(posts.slice(indexOfFirstPost, indexOfLastPost))
+  }, [indexOfFirstPost, indexOfLastPost, page]);
 
   return (
     <div>
       <Table headersName={['글번호', '제목', '등록일', '조회수']}>
         {
-          dataList ? dataList.map((item, index) => {
+          currentPosts.map((item, index) => {
             return (
               <TableRow key={index}>
                 <TableColumn>{ item.no }</TableColumn>
@@ -30,9 +39,12 @@ function PostList() {
                 <TableColumn>{ item.readCount }</TableColumn>
               </TableRow>
             )
-          }) : ''
+          }) 
         } 
       </Table>
+      <Paging 
+      totalCount={posts.length} page={page} postPerPage={postPerPage} 
+      pageRangeDisplayed={5} handlePageChange={handlePageChange} />
     </div>
   );
 }
