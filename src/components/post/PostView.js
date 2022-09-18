@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import PostNo from './data.json';
 import './PostView.css';
+import { useNavigate } from 'react-router-dom';
 
 function PostView() {
   
@@ -18,6 +19,8 @@ function PostView() {
       setData(PostNo.datas[postNum-1])
     )
   }, [postNum]);
+
+  const navigate = useNavigate();
 
   return (
     <div>
@@ -50,8 +53,10 @@ function PostView() {
         </>
             ) : '해당 게시글을 찾을 수 없습니다.'
            }
-          <button className="post-view-go-list-btn">
-            목록으로 돌아가기
+          <button 
+            className="post-view-go-list-btn"
+            onClick={() => navigate(-1)}>
+              목록으로 돌아가기
           </button>
       </div>
     </div>

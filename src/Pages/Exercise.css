@@ -1,14 +1,24 @@
 .exercise-wrap {
-    height:950px;
-    display: flex;
+    /* height:950px; */
+    /* display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-between; */
 }
 
 .option1{
-    padding-left:45%;
+    padding-top: 30px;
+    padding-left:90%;
+}
+
+.btn {
+    border: 1px solid #0000;
+    background-color: #759ad1;
+    font-size: 25px;
+    height:60px;
+    width: 120px;
+
 }
 .option2 { 
     width: 100%;
-    background-color: white;
+    background-color: #ffff;
 }

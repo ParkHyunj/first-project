@@ -1,29 +1,36 @@
 .Writing {
-    margin: 100px;
+    width: 60%;
+    border: 1px solid #000000;
+    margin-top : 100px;
+    margin-left: 320px;
     padding: 20px;
-    padding-left: 30px;
 }
 
 .Writing div {
     margin-top: 30px;
-    margin-left: 50px;
+    margin-left: 5px;
 }
 
 #title_txt {
     width: 91%;
     padding-bottom: 30px;
     border: none;
-    font-size: 60px;
+    font-size: 30px;
     border-bottom: solid 1px #ababab;
     font-weight: bold;
 }
 
 #content_txt {
     width: 91%;
+    font-size: 20px;
     resize: none;
     border: none;
-    height: 500px;
+    height: 400px;
     cursor: pointer;
+}
+p{
+    display: flex;
+    justify-content:space-between;
 }
 
 #content_txt:focus { outline : none; }

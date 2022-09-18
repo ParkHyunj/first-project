@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import PostMain from '../components/post/PostMain';
-import Header from '../pages/Header';
 import '../pages/Exercise.css';
 import { Container } from 'react-bootstrap';
 
@@ -12,16 +11,10 @@ function Exercise() {
             <Container>
                 
                 <div className="exercise-wrap">
-                    {/* <div className="option1-wrap">
-                        <div className="option1">
-                            <Header/>
-                        </div>
-                    </div> */}
-
                     <div className="option1-wrap">
                         <div className="option1">
                             <Link to = "/exercise/writing">
-                                <button>글쓰기</button>
+                                <button className="btn">글쓰기</button>
                             </Link>
                         </div>
                     </div>
