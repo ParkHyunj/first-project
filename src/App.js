@@ -7,6 +7,7 @@ import Game from './pages/Game';
 import Login from './pages/Login';
 import Writing from './components/write/Writing';
 import PostView from './components/post/PostView';
+import Main from './pages/Main';
 
 function App() {
     return (
@@ -15,6 +16,7 @@ function App() {
             
             <Routes>
                 {/* localhost */}
+                <Route path="/" element= {<Main />} />
                 <Route path="/exercise" element= { <Exercise />} />
                 <Route path="/cook" element={ <Cook />} />
                 <Route path="/game" element={ <Game />} />
@@ -22,6 +24,7 @@ function App() {
                 <Route path="/exercise/writing" element={ <Writing/> } />  
                 <Route path="/exercise/postView/:no" element={ <PostView/> } />  
                 {/* gh-pages host */}
+                <Route path="/first-project" element= {<Main />} />
                 <Route path="/first-project/exercise" element= { <Exercise />} />
                 <Route path="/first-project/cook" element={ <Cook />} />
                 <Route path="/first-project/game" element={ <Game />} />
