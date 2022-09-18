@@ -1,11 +1,11 @@
 import React from 'react';
 import PostList from './PostList';
 
-const PostMain = props => {
+function PostMain()  {
   return (
-    <>
+    <div>
       <PostList />
-    </>
+    </div>
   );
 }
 

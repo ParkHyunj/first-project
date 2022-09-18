@@ -4,7 +4,7 @@ import TableColumn from '../table/TableColumn';
 import TableRow from '../table/TableRow';
 import data from './data.json';
 import { Link } from 'react-router-dom';
-import Paging from '../post/Paging'
+import Paging from '../post/Paging';
 import { Container } from 'react-bootstrap';
 
 
@@ -21,7 +21,7 @@ function PostList() {
   useEffect(() => {
     setPosts(data.datas);
     setCurrentPosts(posts.slice(indexOfFirstPost, indexOfLastPost))
-  }, [indexOfFirstPost, indexOfLastPost, page, posts]);
+    }, [indexOfFirstPost, indexOfLastPost, page, posts]);
 
   return (
     <div>
