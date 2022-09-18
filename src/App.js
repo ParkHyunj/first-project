@@ -18,7 +18,16 @@ function App() {
                 <Route path="/game" element={ <Game />} />
                 <Route path="/login" element={ <Login />} />
                 <Route path="/exercise/writing" element={ <Writing/> } />  
-                <Route path="/exercise/postView/:no" element={ <PostView/> } />         
+                <Route path="/exercise/postView/:no" element={ <PostView/> } />  
+
+                
+                <Route path="/first-project/" element={ <Header />} />
+                <Route path="/first-project/exercise" element= { <Exercise />} />
+                <Route path="/first-project/cook" element={ <Cook />} />
+                <Route path="/first-project/game" element={ <Game />} />
+                <Route path="/first-project/login" element={ <Login />} />
+                <Route path="/first-project/exercise/writing" element={ <Writing/> } />  
+                <Route path="/first-project/exercise/postView/:no" element={ <PostView/> } />       
             </Routes>  
         </div>      
     );

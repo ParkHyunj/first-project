@@ -12,7 +12,7 @@ function Header(){
                   <div className="logo-wrap">
                     <div className="logo1-wrap">
                       <div className="logo">
-                        <img src= "/img/img.png" alt="profile"/>
+                        <img src= "/public/img/img.png" alt="profile"/>
                       </div>
                     </div>
                   </div>
