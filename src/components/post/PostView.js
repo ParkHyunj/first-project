@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import PostNo from './data.json';
-import './Post.css';
+import './PostView.css';
 
 function PostView() {
   

@@ -4,7 +4,9 @@ import TableColumn from '../table/TableColumn';
 import TableRow from '../table/TableRow';
 import data from './data.json';
 import { Link } from 'react-router-dom';
-import Paging from '../post/Paging';
+import Paging from '../post/Paging'
+import { Container } from 'react-bootstrap';
+
 
 function PostList() {
   
@@ -19,32 +21,34 @@ function PostList() {
   useEffect(() => {
     setPosts(data.datas);
     setCurrentPosts(posts.slice(indexOfFirstPost, indexOfLastPost))
-  }, [indexOfFirstPost, indexOfLastPost, page]);
+  }, [indexOfFirstPost, indexOfLastPost, page, posts]);
 
   return (
     <div>
-      <Table headersName={['글번호', '제목', '등록일', '조회수']}>
-        {
-          currentPosts.map((item, index) => {
-            return (
-              <TableRow key={index}>
-                <TableColumn>{ item.no }</TableColumn>
-                <TableColumn>
-                  <Link to={`/exercise/postView/${item.no}`}
-                   style={{ textDecoration: "none", color: "black"}}>
-                      { item.title }
-                  </Link>
-                </TableColumn>
-                <TableColumn>{ item.createDate }</TableColumn>
-                <TableColumn>{ item.readCount }</TableColumn>
-              </TableRow>
-            )
-          }) 
-        } 
-      </Table>
+      <Container>
+        <Table headersName={['글번호', '제목', '등록일', '조회수']}>
+          {
+            currentPosts.map((item, index) => {
+              return (
+                <TableRow key={index}>
+                  <TableColumn>{ item.no }</TableColumn>
+                  <TableColumn>
+                    <Link to={`/exercise/postView/${item.no}`}
+                    style={{ textDecoration: "none", color: "black"}}>
+                        { item.title }
+                    </Link>
+                  </TableColumn>
+                  <TableColumn>{ item.createDate }</TableColumn>
+                  <TableColumn>{ item.readCount }</TableColumn>
+                </TableRow>
+              )
+            }) 
+          } 
+        </Table>
+      </Container>
       <Paging 
       totalCount={posts.length} page={page} postPerPage={postPerPage} 
-      pageRangeDisplayed={5} handlePageChange={handlePageChange} />
+      pageRangeDisplayed={5} handlePageChange={handlePageChange} />  
     </div>
   );
 }
