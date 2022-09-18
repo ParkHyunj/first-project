@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
-import PostNo from './data.json';
-import './PostView.css';
+import PostNo from './data2.json';
+import '../post/PostView.css';
 import { useNavigate } from 'react-router-dom';
 
-function PostView() {
+function PostView2() {
   
   const [ data, setData ] = useState({});
   const [ postNum, setpostNum ] = useState(0);
@@ -24,7 +24,7 @@ function PostView() {
 
   return (
     <div>
-      <h2 align="center">운동 게시글 상세정보</h2>
+      <h2 align="center">게임 게시글 상세정보</h2>
 
       <div className="post-view-wrapper">
         {
@@ -65,4 +65,4 @@ function PostView() {
   );
 }
 
-export default PostView;
+export default PostView2;

@@ -2,119 +2,119 @@
     "datas" : [
         {
             "no": 1,
-            "title": "운동 첫번째 게시글입니다.",
-            "content": "운동 첫번째 게시글 내용입니다.",
+            "title": "게임 첫번째 게시글입니다.",
+            "content": "게임 첫번째 게시글 내용입니다.",
             "createDate": "2022-09-01",
             "readCount": "121",
             "category": "exercise"
         },
         {
             "no": 2,
-            "title": "운동 두번째 게시글입니다.",
-            "content": "운동 두번째 게시글 내용입니다.",
+            "title": "게임 두번째 게시글입니다.",
+            "content": "게임 두번째 게시글 내용입니다.",
             "createDate": "2022-09-02",
             "readCount": "55",
             "category": "exercise"
         },
         {
             "no": 3,
-            "title": "운동 세번째 게시글입니다.",
-            "content": "운동 세번째 게시글 내용입니다.",
+            "title": "게임 세번째 게시글입니다.",
+            "content": "게임 세번째 게시글 내용입니다.",
             "createDate": "2022-09-03",
             "readCount": "166",
             "category": "exercise"
         },
         {
             "no": 4,
-            "title": "운동 네번째 게시글입니다.",
-            "content": "운동 네번째 게시글 내용입니다.",
+            "title": "게임 네번째 게시글입니다.",
+            "content": "게임 네번째 게시글 내용입니다.",
             "createDate": "2022-09-04",
             "readCount": "271",
             "category": "exercise"
         },
         {
             "no": 5,
-            "title": "운동 다섯번째 게시글입니다.",
-            "content": "운동 다섯번째 게시글 내용입니다.",
+            "title": "게임 다섯번째 게시글입니다.",
+            "content": "게임 다섯번째 게시글 내용입니다.",
             "createDate": "2022-09-05",
             "readCount": "458",
             "category": "exercise"
         },
         {
             "no": 6,
-            "title": "운동 여섯번째 게시글입니다.",
-            "content": "운동 여섯번째 게시글 내용입니다.",
+            "title": "게임 여섯번째 게시글입니다.",
+            "content": "게임 여섯번째 게시글 내용입니다.",
             "createDate": "2022-09-10",
             "readCount": "65",
             "category": "exercise"
         },
         {
             "no": 7,
-            "title": "운동 일곱번째 게시글입니다.",
-            "content": "운동 일곱번째 게시글 내용입니다.",
+            "title": "게임 일곱번째 게시글입니다.",
+            "content": "게임 일곱번째 게시글 내용입니다.",
             "createDate": "2022-09-11",
             "readCount": "42",
             "category": "exercise"
         },
         {
             "no": 8,
-            "title": "운동 여덟번째 게시글입니다.",
-            "content": "운동 여덟번째 게시글 내용입니다.",
+            "title": "게임 여덟번째 게시글입니다.",
+            "content": "게임 여덟번째 게시글 내용입니다.",
             "createDate": "2022-09-12",
             "readCount": "64",
             "category": "exercise"
         },
         {
             "no": 9,
-            "title": "운동 아홉번째 게시글입니다.",
-            "content": "운동 아홉번째 게시글 내용입니다.",
+            "title": "게임 아홉번째 게시글입니다.",
+            "content": "게임 아홉번째 게시글 내용입니다.",
             "createDate": "2022-09-12",
             "readCount": 40
         },
         {
             "no": 10,
-            "title": "운동 열번째 게시글입니다.",
-            "content": "운동 열번째 게시글 내용입니다.",
+            "title": "게임 열번째 게시글입니다.",
+            "content": "게임 열번째 게시글 내용입니다.",
             "createDate": "2022-09-12",
             "readCount": "49",
             "category": "exercise"
         },
         {
             "no": 11,
-            "title": "운동 열한번째 게시글입니다.",
-            "content": "운동 열한번째 게시글 내용입니다.",
+            "title": "게임 열한번째 게시글입니다.",
+            "content": "게임 열한번째 게시글 내용입니다.",
             "createDate": "2022-09-12",
             "readCount": "15",
             "category": "exercise"
         },
         {
             "no": 12,
-            "title": "운동 열두번째 게시글입니다.",
-            "content": "운동 열두번째 게시글 내용입니다.",
+            "title": "게임 열두번째 게시글입니다.",
+            "content": "게임 열두번째 게시글 내용입니다.",
             "createDate": "2022-09-13",
             "readCount": "63",
             "category": "exercise"
         },
         {
             "no": 13,
-            "title": "운동 열세번째 게시글입니다.",
-            "content": "운동 열세번째 게시글 내용입니다.",
+            "title": "게임 열세번째 게시글입니다.",
+            "content": "게임 열세번째 게시글 내용입니다.",
             "createDate": "2022-09-13",
             "readCount": "11",
             "category": "exercise"
         },
         {
             "no": 14,
-            "title": "운동 열네번째 게시글입니다.",
-            "content": "운동 열네번째 게시글 내용입니다.",
+            "title": "게임 열네번째 게시글입니다.",
+            "content": "게임 열네번째 게시글 내용입니다.",
             "createDate": "2022-09-14",
             "readCount": "77",
             "category": "exercise"
         },
         {
             "no": 15,
-            "title": "운동 열다섯번째 게시글입니다.",
-            "content": "운동 열다섯번째 게시글 내용입니다.",
+            "title": "게임 열다섯번째 게시글입니다.",
+            "content": "게임 열다섯번째 게시글 내용입니다.",
             "createDate": "2022-09-15",
             "readCount": "88",
             "category": "exercise"

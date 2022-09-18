@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import PostMain from '../components/post/PostMain';
+import PostMain1 from '../components/cooks/PostMain1';
 import { Container } from 'react-bootstrap';
 import '../pages/Exercise.css';
 
@@ -12,7 +12,7 @@ function Cook() {
                 <div className="exercise-wrap">
                     <div className="option1-wrap">
                         <div className="option1">
-                            <Link to = "/exercise/writing">
+                            <Link to = "/cook/writing">
                                 <button className="btn">글쓰기</button>
                             </Link>
                         </div>
@@ -20,7 +20,7 @@ function Cook() {
 
                     <div className="option2-wrap">
                         <div className="option2">
-                            <PostMain />
+                            <PostMain1 />
                         </div>
                     </div>
                 </div>

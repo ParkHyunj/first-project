@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import PostMain from '../components/post/PostMain';
+import PostMain2 from '../components/games/PostMain2';
 import '../pages/Exercise.css';
 import { Container } from 'react-bootstrap';
 
@@ -12,7 +12,7 @@ function Game() {
                 <div className="exercise-wrap">
                     <div className="option1-wrap">
                         <div className="option1">
-                            <Link to = "/exercise/writing">
+                            <Link to = "/game/writing">
                                 <button className="btn">글쓰기</button>
                             </Link>
                         </div>
@@ -20,7 +20,7 @@ function Game() {
 
                     <div className="option2-wrap">
                         <div className="option2">
-                            <PostMain />
+                            <PostMain2 />
                         </div>
                     </div>
                 </div>
