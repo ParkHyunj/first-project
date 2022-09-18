@@ -12,6 +12,7 @@ function App() {
     return (
         <div>
             <Routes>
+                {/* localhost */}
                 <Route path="/" element={ <Header />} />
                 <Route path="/exercise" element= { <Exercise />} />
                 <Route path="/cook" element={ <Cook />} />
@@ -19,8 +20,7 @@ function App() {
                 <Route path="/login" element={ <Login />} />
                 <Route path="/exercise/writing" element={ <Writing/> } />  
                 <Route path="/exercise/postView/:no" element={ <PostView/> } />  
-
-                
+                {/* gh-pages host */}
                 <Route path="/first-project/" element={ <Header />} />
                 <Route path="/first-project/exercise" element= { <Exercise />} />
                 <Route path="/first-project/cook" element={ <Cook />} />

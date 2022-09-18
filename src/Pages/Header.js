@@ -2,6 +2,7 @@ import React from 'react';
 import { Button, Container } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import "../pages/Header.css";
+import logo from '../assets/img.png';
 
 function Header(){
     return(
@@ -12,7 +13,7 @@ function Header(){
                   <div className="logo-wrap">
                     <div className="logo1-wrap">
                       <div className="logo">
-                        <img src= "/public/img/img.png" alt="profile"/>
+                        <img src= {logo} alt="profile"/>
                       </div>
                     </div>
                   </div>
