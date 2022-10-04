@@ -9,9 +9,15 @@ function PostView() {
   const [ postNum, setpostNum ] = useState(0);
 
   useEffect(() => {
-    var pathName = window.location.pathname;
-    setpostNum(pathName.substr(-1));
-    setData(PostNo.datas[postNum-1]);
+    var pathName = window.location.pathname.split("/")[3];
+    console.log(pathName);
+    setpostNum(pathName);
+//     // setpostNum(pathName.substr(-1));
+// http://localhost:3000/exercise/postView/15에서 
+// 마지막 15(두자릿수 중 일의자리수만 가능한 문구 : /1 , /3 등등)
+  
+    setData(PostNo.datas[postNum-1]); 
+    console.log(data);
   }, [ ]);
 
   useEffect(() => {
